@@ -10,7 +10,7 @@ const Hero = () => {
   const downloadResume = () => {
     // Replace with your actual resume file path
     const link = document.createElement('a');
-    link.href = '/Your_Name_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/17ND9Cln_QAECyhgi42lRUfbBWnhe3_s2/view?usp=sharing';
     link.download = 'surajresume.pdf';
     link.click();
   };
