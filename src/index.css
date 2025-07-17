@@ -1,0 +1,84 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 11 12 16;
+    --foreground: 210 40% 98%;
+
+    --card: 31 40 51;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 11 12 16;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 180 42% 41%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 31 40 51;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 31 40 51;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 180 42% 41%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 180 42% 41%;
+    --input: 31 40 51;
+    --ring: 180 42% 41%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 11 12 16;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 180 42% 41%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 31 40 51;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 180 42% 41%;
+    --sidebar-ring: 180 42% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #45a29e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f2833;
+}
