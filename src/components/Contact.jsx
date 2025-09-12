@@ -25,7 +25,6 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      // Note: You'll need to set up EmailJS with your own service ID, template ID, and user ID
       await emailjs.send(
         'service_gnhxkvh',
         'template_0cvaamh',
@@ -34,6 +33,7 @@ const Contact = () => {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
+          to_email: 'surajrwt9411@gmail.com', // Your email to receive messages
         },
         'h4dZZMeqrUtE5f4tj'
       );
@@ -41,6 +41,7 @@ const Contact = () => {
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
