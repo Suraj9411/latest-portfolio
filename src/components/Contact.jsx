@@ -27,15 +27,15 @@ const Contact = () => {
     try {
       // Note: You'll need to set up EmailJS with your own service ID, template ID, and user ID
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_gnhxkvh',
+        'template_0cvaamh',
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'YOUR_USER_ID'
+        'h4dZZMeqrUtE5f4tj'
       );
 
       setSubmitStatus('success');
@@ -63,7 +63,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Dehradun, Uttarakhand, India',
+      value: 'Kotdwara, Uttarakhand, India',
       href: '#',
     },
   ];
