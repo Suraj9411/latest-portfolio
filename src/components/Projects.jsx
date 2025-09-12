@@ -8,83 +8,85 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'LMS – Learning Management SaaS Platform',
+      description: 'A scalable SaaS platform for delivering online courses with user management, payment integration, and analytics.',
+      longDescription: 'A full-featured Learning Management System built as a SaaS platform using the MERN stack. Instructors can create and manage courses, upload content, track student progress, and integrate with payment gateways for course purchases. It features multi-tenant support, responsive design, analytics dashboards, and secure user authentication.',
+      image: 'https://images.unsplash.com/photo-1584697964154-ef8800c4f21d?w=600&h=400&fit=crop',
+      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe', 'Tailwind CSS'],
+      liveUrl: 'https://lms-demo.vercel.app', // replace with your actual URL
+      githubUrl: 'https://github.com/Suraj9411', // replace with your repo URL
+      featured: true,
+      date: 'January 2024',
+      category: 'SaaS Platform'
+    },
+    {
+      id: 2,
       title: 'Realtime Chat Application',
       description: 'A modern chat application with real-time messaging, user authentication, and file sharing capabilities.',
-      longDescription: 'This is a comprehensive real-time chat application built with modern web technologies. It features instant messaging, user authentication, file sharing, and group chat functionality. The application uses WebSocket connections for real-time communication and includes features like message encryption, online status indicators, and message history.',
+      longDescription: 'A comprehensive real-time chat application built with the MERN stack. It features instant messaging, user authentication, file sharing, and group chat functionality. The application uses WebSocket connections for real-time communication and includes features like message encryption, online status indicators, and message history.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js', 'JWT'],
+      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Socket.io', 'JWT'],
       liveUrl: 'https://chattyzone.onrender.com',
-      githubUrl: 'https://github.com/Suraj9411',
+      githubUrl: 'https://github.com/Suraj9411/chat-application', 
       featured: true,
       date: 'December 2023',
       category: 'Full Stack Web App'
     },
     {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A comprehensive project management tool with drag-and-drop functionality and team collaboration features.',
-      longDescription: 'A full-featured task management application designed for teams and individuals. It includes drag-and-drop task organization, project tracking, team collaboration tools, deadline management, and progress visualization. The app supports multiple project views and integrates with popular productivity tools.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'Express.js', 'PostgreSQL', 'Tailwind CSS', 'Redux', 'DnD Kit'],
-      liveUrl: 'https://taskmanager-demo.vercel.app',
-      githubUrl: 'https://github.com/Suraj9411',
-      featured: true,
-      date: 'November 2023',
-      category: 'Web Application'
-    },
-    {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'An interactive weather application with location-based forecasts and beautiful data visualizations.',
-      longDescription: 'A comprehensive weather dashboard that provides detailed weather information, forecasts, and historical data. Features include location-based weather, interactive maps, weather alerts, and beautiful data visualizations using charts and graphs. The app supports multiple locations and provides detailed meteorological data.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'Chart.js', 'Weather API', 'CSS3', 'Axios', 'Geolocation API'],
-      liveUrl: 'https://weather-dashboard-demo.netlify.app',
-      githubUrl: 'https://github.com/Suraj9411',
+      title: 'House Rental Platform',
+      description: 'A MERN stack platform to find and rent houses online with map-based listings and authentication.',
+      longDescription: 'A full-stack home rental platform built using the MERN stack to help students and professionals find rental houses online. It features user authentication, login/logout, map-based house listings, and the ability for authenticated users to post rental details. The platform also supports secure communication between tenants and landlords.',
+      image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&h=400&fit=crop',
+      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Mapbox', 'JWT'],
+      liveUrl: 'https://house-rental-demo.vercel.app', // replace with your actual URL
+      githubUrl: 'https://github.com/Suraj9411', // replace with your repo URL
       featured: true,
-      date: 'October 2023',
-      category: 'Frontend Application'
+      date: 'March 2024',
+      category: 'Full Stack Web App'
     },
     {
       id: 4,
-      title: 'Social Media Dashboard',
-      description: 'A comprehensive dashboard for managing multiple social media accounts with analytics and scheduling.',
-      longDescription: 'A powerful social media management platform that allows users to manage multiple social media accounts from a single dashboard. Features include post scheduling, analytics tracking, content calendar, engagement metrics, and automated posting. The platform supports major social media platforms and provides detailed insights.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Node.js', 'MySQL', 'Bootstrap', 'Chart.js', 'Social APIs'],
-      liveUrl: 'https://social-dashboard-demo.herokuapp.com',
-      githubUrl: 'https://github.com/Suraj9411',
+      title: 'Weather Forecast Website',
+      description: 'A simple weather forecast website built with HTML, CSS, and JavaScript using the OpenWeather API.',
+      longDescription: 'A lightweight weather prediction website that fetches real-time weather data from the OpenWeather API. Built purely with HTML, CSS, and vanilla JavaScript. It allows users to search for a city and view current conditions, temperature, humidity, and forecasts.',
+      image: './weather.png',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'OpenWeather API'],
+      liveUrl: 'https://getweather-one.vercel.app/', // replace with your actual URL
+      githubUrl: 'https://github.com/Suraj9411/weather-forecasting', // replace with your repo URL
       featured: false,
-      date: 'September 2023',
-      category: 'Web Application'
+      date: 'April 2024',
+      category: 'Frontend Application'
     },
     {
       id: 5,
-      title: 'Recipe Finder App',
-      description: 'A mobile-responsive app for discovering and saving recipes with ingredient-based search functionality.',
-      longDescription: 'A comprehensive recipe discovery application that helps users find recipes based on available ingredients, dietary preferences, and cooking time. Features include recipe search, ingredient substitution suggestions, nutritional information, meal planning, and personal recipe collections. The app supports multiple cuisines and dietary restrictions.',
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop',
-      technologies: ['React Native', 'Firebase', 'Recipe API', 'Redux', 'Nutrition API', 'AsyncStorage'],
-      liveUrl: 'https://recipe-finder-demo.netlify.app',
-      githubUrl: 'https://github.com/Suraj9411',
+      title: 'Text-to-Speech / Speech-to-Text App',
+      description: 'A web app to convert text to speech and speech to text using Web Speech APIs.',
+      longDescription: 'An interactive web application that converts typed text into natural-sounding speech and also transcribes spoken words into text. Built with JavaScript and the Web Speech API, it is designed for accessibility and productivity.',
+      image: './textspeech.png',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Web Speech API'],
+      liveUrl: 'https://texttospeak.vercel.app/', 
+      githubUrl: 'https://github.com/Suraj9411/text-to-speech', 
       featured: false,
-      date: 'August 2023',
-      category: 'Mobile Application'
+      date: 'May 2024',
+      category: 'Web Application'
     },
     {
       id: 6,
-      title: 'Cryptocurrency Tracker',
-      description: 'Real-time cryptocurrency price tracking with portfolio management and market analysis tools.',
-      longDescription: 'A comprehensive cryptocurrency tracking application that provides real-time price updates, portfolio management, and market analysis. Features include price alerts, portfolio tracking, market trends, historical data, and news integration. The app supports multiple cryptocurrencies and provides detailed market insights.',
-      image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&h=400&fit=crop',
-      technologies: ['React', 'CoinGecko API', 'Chart.js', 'Material-UI', 'WebSocket', 'Local Storage'],
-      liveUrl: 'https://crypto-tracker-demo.vercel.app',
-      githubUrl: 'https://github.com/Suraj9411',
+      title: 'Personal Portfolio Website',
+      description: 'A responsive portfolio website showcasing projects, skills, and experience.',
+      longDescription: 'A fully responsive personal portfolio website built to showcase my projects, skills, and experience. It includes smooth scrolling, interactive project cards, and a contact form powered by EmailJS.',
+      image: './portfolio.png',
+      technologies: ['React', 'Tailwind CSS', 'EmailJS'],
+      liveUrl: 'https://surajrawatssr.vercel.app', 
+      githubUrl: 'https://github.com/Suraj9411/latest-portfolio', 
       featured: false,
-      date: 'July 2023',
-      category: 'Web Application'
-    },
+      date: 'June 2024',
+      category: 'Portfolio Website'
+    }
   ];
+  
+  
 
   const displayedProjects = showAll ? projects : projects.filter(p => p.featured);
 
