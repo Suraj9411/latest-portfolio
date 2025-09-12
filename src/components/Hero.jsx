@@ -81,7 +81,7 @@ const Hero = () => {
           </div>
 
           {/* Right Side - Profile Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end relative">
             <div className="animate-fade-in">
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full bg-gradient-to-r from-[#45a29e] to-[#1f2833] p-2 shadow-2xl">
                 <img
@@ -94,12 +94,22 @@ const Hero = () => {
                 />
               </div>
             </div>
+            
+            {/* Scroll Indicator - Only visible on mobile, centered below profile image */}
+            <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 animate-bounce lg:hidden">
+              <button
+                onClick={scrollToAbout}
+                className="text-[#45a29e] hover:text-white transition-colors duration-300"
+              >
+                <ChevronDown size={32} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll Indicator - Only visible on desktop, centered on screen */}
+      <div className="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button
           onClick={scrollToAbout}
           className="text-[#45a29e] hover:text-white transition-colors duration-300"

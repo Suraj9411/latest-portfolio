@@ -13,20 +13,38 @@ import ScrollToTop from './components/ScrollToTop';
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
 
-  const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.5 });
-  const { ref: aboutRef, inView: aboutInView } = useInView({ threshold: 0.5 });
-  const { ref: projectsRef, inView: projectsInView } = useInView({ threshold: 0.3 });
-  const { ref: skillsRef, inView: skillsInView } = useInView({ threshold: 0.5 });
-  const { ref: certificationsRef, inView: certificationsInView } = useInView({ threshold: 0.5 });
-  const { ref: contactRef, inView: contactInView } = useInView({ threshold: 0.5 });
+  const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.3 });
+  const { ref: aboutRef, inView: aboutInView } = useInView({ threshold: 0.3 });
+  const { ref: projectsRef, inView: projectsInView } = useInView({ threshold: 0.2 });
+  const { ref: skillsRef, inView: skillsInView } = useInView({ threshold: 0.3 });
+  const { ref: certificationsRef, inView: certificationsInView } = useInView({ threshold: 0.3 });
+  const { ref: contactRef, inView: contactInView } = useInView({ threshold: 0.3 });
 
   useEffect(() => {
-    if (heroInView) setActiveSection('home');
-    else if (aboutInView) setActiveSection('about');
-    else if (projectsInView) setActiveSection('projects');
-    else if (skillsInView) setActiveSection('skills');
-    else if (certificationsInView) setActiveSection('certifications');
-    else if (contactInView) setActiveSection('contact');
+    if (heroInView) {
+      setActiveSection('home');
+      console.log('Active: home');
+    }
+    else if (aboutInView) {
+      setActiveSection('about');
+      console.log('Active: about');
+    }
+    else if (projectsInView) {
+      setActiveSection('projects');
+      console.log('Active: projects');
+    }
+    else if (skillsInView) {
+      setActiveSection('skills');
+      console.log('Active: skills');
+    }
+    else if (certificationsInView) {
+      setActiveSection('certifications');
+      console.log('Active: certifications');
+    }
+    else if (contactInView) {
+      setActiveSection('contact');
+      console.log('Active: contact');
+    }
   }, [heroInView, aboutInView, projectsInView, skillsInView, certificationsInView, contactInView]);
 
   return (

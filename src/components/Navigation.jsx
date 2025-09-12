@@ -18,7 +18,10 @@ const Navigation = ({ activeSection }) => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false);
+    // Add a small delay to show the active state before closing menu
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 300);
   };
 
   return (
@@ -68,21 +71,24 @@ const Navigation = ({ activeSection }) => {
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1f2833]/90 rounded-lg mt-2">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1f2833]/95 backdrop-blur-sm rounded-lg mt-2 border border-[#45a29e]/20">
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-300 flex items-center space-x-3 ${
+                  className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 flex items-center space-x-3 transform hover:scale-105 ${
                     activeSection === item.id
-                      ? 'bg-[#45a29e] text-white'
-                      : 'text-[#d1d5db] hover:bg-[#45a29e]/20 hover:text-[#45a29e]'
+                      ? 'bg-gradient-to-r from-[#45a29e] to-[#1f2833] text-white shadow-lg border border-[#45a29e]/50'
+                      : 'text-[#d1d5db] hover:bg-[#45a29e]/20 hover:text-[#45a29e] hover:border-[#45a29e]/30 border border-transparent'
                   }`}
                 >
-                  <Icon size={20} />
-                  <span>{item.label}</span>
+                  <Icon size={20} className={activeSection === item.id ? 'text-white' : ''} />
+                  <span className={activeSection === item.id ? 'font-semibold' : ''}>{item.label}</span>
+                  {activeSection === item.id && (
+                    <div className="ml-auto w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                  )}
                 </button>
               );
             })}
