@@ -29,11 +29,12 @@ const Contact = () => {
         'service_gnhxkvh',
         'template_0cvaamh',
         {
+          to_name: 'Suraj',
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_email: 'surajrwt9411@gmail.com', // Your email to receive messages
+          reply_to: formData.email,
         },
         'h4dZZMeqrUtE5f4tj'
       );
