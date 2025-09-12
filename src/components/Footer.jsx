@@ -94,7 +94,7 @@ const Footer = () => {
                 <span className="text-[#45a29e]">Phone:</span> +91 8433260352
               </p>
               <p className="text-[#9ca3af]">
-                <span className="text-[#45a29e]">Location:</span> Dehradun, India
+                <span className="text-[#45a29e]">Location:</span> Kotdwara, India
               </p>
             </div>
           </div>
