@@ -101,6 +101,10 @@ const Skills = () => {
           name: 'Figma', 
           icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
         },
+        { 
+          name: 'Postman', 
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg'
+        },
       ],
     },
   ];
