@@ -13,8 +13,8 @@ const Projects = () => {
       longDescription: 'A full-featured Learning Management System built as a SaaS platform using the MERN stack. Instructors can create and manage courses, upload content, track student progress, and integrate with payment gateways for course purchases. It features multi-tenant support, responsive design, analytics dashboards, and secure user authentication.',
       image: 'https://images.unsplash.com/photo-1584697964154-ef8800c4f21d?w=600&h=400&fit=crop',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe', 'Tailwind CSS'],
-      liveUrl: 'https://lms-demo.vercel.app', // replace with your actual URL
-      githubUrl: 'https://github.com/Suraj9411', // replace with your repo URL
+      liveUrl: 'https://lms-demo.vercel.app', 
+      githubUrl: 'https://github.com/Suraj9411', 
       featured: true,
       date: 'January 2024',
       category: 'SaaS Platform'
@@ -23,10 +23,10 @@ const Projects = () => {
       id: 2,
       title: 'Realtime Chat Application',
       description: 'A modern chat application with real-time messaging, user authentication, and file sharing capabilities.',
-      longDescription: 'A comprehensive real-time chat application built with the MERN stack. It features instant messaging, user authentication, file sharing, and group chat functionality. The application uses WebSocket connections for real-time communication and includes features like message encryption, online status indicators, and message history.',
+      longDescription: 'A comprehensive real-time chat application built with the MERN stack. It features instant messaging, user authentication. The application uses WebSocket connections for real-time communication and includes features like private messaging, online status indicators, and message history.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Socket.io', 'JWT'],
-      liveUrl: 'https://chattyzone.onrender.com',
+      liveUrl: 'https://chatwithmee.onrender.com',
       githubUrl: 'https://github.com/Suraj9411/chat-application', 
       featured: true,
       date: 'December 2023',
@@ -39,8 +39,8 @@ const Projects = () => {
       longDescription: 'A full-stack home rental platform built using the MERN stack to help students and professionals find rental houses online. It features user authentication, login/logout, map-based house listings, and the ability for authenticated users to post rental details. The platform also supports secure communication between tenants and landlords.',
       image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&h=400&fit=crop',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Mapbox', 'JWT'],
-      liveUrl: 'https://house-rental-demo.vercel.app', // replace with your actual URL
-      githubUrl: 'https://github.com/Suraj9411', // replace with your repo URL
+      liveUrl: 'https://house-rental-demo.vercel.app', 
+      githubUrl: 'https://github.com/Suraj9411', 
       featured: true,
       date: 'March 2024',
       category: 'Full Stack Web App'
@@ -52,8 +52,8 @@ const Projects = () => {
       longDescription: 'A lightweight weather prediction website that fetches real-time weather data from the OpenWeather API. Built purely with HTML, CSS, and vanilla JavaScript. It allows users to search for a city and view current conditions, temperature, humidity, and forecasts.',
       image: './weather.png',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'OpenWeather API'],
-      liveUrl: 'https://getweather-one.vercel.app/', // replace with your actual URL
-      githubUrl: 'https://github.com/Suraj9411/weather-forecasting', // replace with your repo URL
+      liveUrl: 'https://getweather-one.vercel.app/', 
+      githubUrl: 'https://github.com/Suraj9411/weather-forecasting', 
       featured: false,
       date: 'April 2024',
       category: 'Frontend Application'

@@ -4,39 +4,39 @@ import { Award, Calendar, ExternalLink, TrendingUp, ChevronDown, ChevronUp } fro
 const Certifications = () => {
   const [showMore, setShowMore] = useState(false);
   const stats = [
-    { label: 'Certifications Earned', value: '12+', icon: Award },
+    { label: 'Certifications Earned', value: '5+', icon: Award },
     { label: 'Years of Learning', value: '3+', icon: Calendar },
-    { label: 'Skills Mastered', value: '25+', icon: TrendingUp },
-    { label: 'Projects Completed', value: '50+', icon: ExternalLink },
+    { label: 'Skills Mastered', value: '5+', icon: TrendingUp },
+    { label: 'Projects Completed', value: '5+', icon: ExternalLink },
   ];
 
   const certifications = [
     {
-      title: 'Full Stack Web Development',
-      issuer: 'FreeCodeCamp',
+      title: 'Google Cloud Computing Foundations',
+      issuer: 'Swayam',
       date: '2023',
-      credentialId: 'FCC-12345',
-      skills: ['React', 'Node.js', 'MongoDB', 'Express'],
-      verifyUrl: '#',
-      image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop',
+      credentialId: 'NPTEL23CS90S73420099120408319',
+      skills: ['Google Cloud', 'Cloud Computing', 'Cloud Platform', 'Cloud Services'],
+      verifyUrl: 'https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs90/Course/NPTEL23CS90S73420099120408319.pdf',
+      image: './swayam.png',
     },
     {
-      title: 'JavaScript Algorithms and Data Structures',
-      issuer: 'FreeCodeCamp',
-      date: '2023',
-      credentialId: 'FCC-67890',
-      skills: ['JavaScript', 'Algorithms', 'Data Structures'],
-      verifyUrl: '#',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop',
+      title: 'Adobe India Hackathon',
+      issuer: 'Unstop',
+      date: '2025',
+      credentialId: '3fc8b9be-491f-40e5-ad87-4f8f0c91f628',
+      skills: ['Adobe', 'Adobe India Hackathon', 'Adobe India Hackathon 2025'],
+      verifyUrl: 'https://unstop.com/certificate-preview/3fc8b9be-491f-40e5-ad87-4f8f0c91f628',
+      image: './adobe.png',
     },
     {
-      title: 'Responsive Web Design',
-      issuer: 'FreeCodeCamp',
-      date: '2022',
-      credentialId: 'FCC-11111',
-      skills: ['HTML', 'CSS', 'Flexbox', 'Grid'],
-      verifyUrl: '#',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop',
+      title: 'GDG on Campus Solution Challenge India ( Hack2Skill )',
+      issuer: 'Hack2Skill (Google Developer Group)',
+      date: '2025',
+      credentialId: '2025H2S01GSC-I10525',
+      skills: ['Google Developer Group', 'Hack2Skill', 'Hack2Skill 2025'],
+      verifyUrl: 'https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I10525',
+      image: './hack2skill.png',
     },
     {
       title: 'React - The Complete Guide',
@@ -68,9 +68,9 @@ const Certifications = () => {
   ];
 
   const featuredCertifications = certifications.filter(cert => 
-    cert.title === 'Full Stack Web Development' || 
-    cert.title === 'JavaScript Algorithms and Data Structures' || 
-    cert.title === 'Responsive Web Design'
+    cert.title === 'Google Cloud Computing Foundations' || 
+    cert.title === 'Adobe India Hackathon' || 
+    cert.title === 'GDG on Campus Solution Challenge India ( Hack2Skill )'
   );
   
   const displayedCertifications = showMore ? certifications : featuredCertifications;
