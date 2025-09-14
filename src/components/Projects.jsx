@@ -24,7 +24,7 @@ const Projects = () => {
       title: 'Realtime Chat Application',
       description: 'A modern chat application with real-time messaging, user authentication, and file sharing capabilities.',
       longDescription: 'A comprehensive real-time chat application built with the MERN stack. It features instant messaging, user authentication. The application uses WebSocket connections for real-time communication and includes features like private messaging, online status indicators, and message history.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
+      image: './realtimechat.png',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Socket.io', 'JWT'],
       liveUrl: 'https://chatwithmee.onrender.com',
       githubUrl: 'https://github.com/Suraj9411/chat-application', 
