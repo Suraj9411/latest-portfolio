@@ -39,7 +39,7 @@ const Projects = () => {
       longDescription: 'A full-stack home rental platform built using the MERN stack to help students and professionals find rental houses online. It features user authentication, login/logout, map-based house listings, and the ability for authenticated users to post rental details. The platform also supports secure communication between tenants and landlords.',
       image: './houserental.png',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Mapbox', 'JWT'],
-      liveUrl: 'https://renteasee.vercel.app', 
+      liveUrl: 'https://houserentalease.onrender.com', 
       githubUrl: 'https://github.com/Suraj9411/rent_me', 
       featured: true,
       date: 'March 2024',
