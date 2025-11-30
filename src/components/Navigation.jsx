@@ -30,7 +30,7 @@ const Navigation = ({ activeSection }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-[#45a29e]">Portfolio</h1>
+            <h1 className="text-2xl font-bold text-[#45a29e]"><Suraj/Singh/Rawat></h1>
           </div>
 
           {/* Desktop Navigation */}
