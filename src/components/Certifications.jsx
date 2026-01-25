@@ -27,7 +27,7 @@ const Certifications = () => {
       credentialId: 'Zvwxcqs2mmYajgMRN',
       skills: [ 'Cybersecurity Fundamentals', 'Threat Analysis', 'Incident Response'],
       verifyUrl: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_Zvwxcqs2mmYajgMRN_1751919631898_completion_certificate.pdf',
-      image: './deloite.png',
+      image: './deloitte.png',
     },
     {
       title: 'AWS Cloud Practitioner Essentials',
@@ -69,8 +69,8 @@ const Certifications = () => {
 
   const featuredCertifications = certifications.filter(cert => 
     cert.title === 'Google Cloud Computing Foundations' || 
-    cert.title === 'Adobe India Hackathon' || 
-    cert.title === 'GDG on Campus Solution Challenge India ( Hack2Skill )'
+    cert.title === 'AWS Cloud Practitioner Essentials' || 
+    cert.title === 'Deloitte - Cyber Job Simulation'
   );
   
   const displayedCertifications = showMore ? certifications : featuredCertifications;
