@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'LMS – Learning Management SaaS Platform',
       description: 'A scalable SaaS platform for delivering online courses with user management, payment integration, and analytics.',
       longDescription: 'A full-featured Learning Management System built as a SaaS platform using the MERN stack. Instructors can create and manage courses, upload content, track student progress, and integrate with payment gateways for course purchases. It features multi-tenant support, responsive design, analytics dashboards, and secure user authentication.',
-      image: 'https://images.unsplash.com/photo-1584697964154-ef8800c4f21d?w=600&h=400&fit=crop',
+      image: './learnhub.png',
       technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe', 'Tailwind CSS'],
       liveUrl: 'https://learnhubplatform.vercel.app', 
       githubUrl: 'https://github.com/Suraj9411/lms_learnhub', 
